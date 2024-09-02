@@ -132,15 +132,23 @@ body, html {
     background-size: cover;
     z-index: 2; 
     transition: 1s ease-in-out;  */
-
+    top: 0; 
+    left: 0; 
     width: 100vw;
     height: 100vh;
     position: fixed;
+    transition: 1s ease-in-out;
 }
-.beg{
+.animation-1::before{
+    width: 50vw;
+    height: 50vh;
+    top: 50; 
+    left: 50; 
+}
+/* .beg{
     position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0; 
     left: 0; 
-}
+} */

@@ -40,7 +40,7 @@ function onEntry(entries, observer) {
                     // Генерация нового класса анимации // Задайте количество доступных анимаций
                       //index = Math.floor(Math.random() * totalAnimations); Случайный индекс для выбора анимации
                     const animationClass = `animation-${cntAnim}`; // Класс анимации
-                    
+                    const animationClassbef = `animation-${cntAnim}::before`;
                     cntAnim++;
                     // Добавляем сгенерированный класс к элементу
                     e.classList.add(animationClass);
@@ -167,7 +167,7 @@ window.addEventListener('wheel', (event) => {
     // }
     isAnimating = true;
     setTimeout(() => {
-        isAnimating = false; // Разблокировка после завершения анимации
+        isAnimating = false; 
     }, 100);
     // var n = "";
     // var s = $("html").scrollTop(n);
